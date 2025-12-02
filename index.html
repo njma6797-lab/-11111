@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>أكاديمية نجم للهكر الأخلاقي</title>
+
+<link rel="stylesheet" href="style.css" />
+<script defer src="script.js"></script>
+
+</head>
+<body>
+
+<div class="matrix"></div>
+
+<div class="overlay">
+
+<header>
+<h1>أكاديمية نجم للهكر الأخلاقي</h1>
+<p class="subtitle">تعلم – اختبر – احترف</p>
+</header>
+
+<nav class="menu">
+<button onclick="loadPage('books')">📘 كتب</button>
+<button onclick="loadPage('courses')">🎓 كورسات</button>
+<button onclick="loadPage('quiz')">🛡️ اختبار</button>
+<button onclick="loadPage('sound')">🎧 مؤثرات</button>
+<button onclick="loadPage('network')">⚠️ فحص الشبكة</button>
+<button onclick="loadPage('dashboard')">📊 لوحة التحكم</button>
+</nav>
+
+<section id="content"></section>
+
+</div>
+
+<audio id="startSound">
+<source src="https://www.soundjay.com/button/sounds/beep-07.mp3">
+</audio>
+
+</body>
+</html>
