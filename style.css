@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: "Courier New", monospace;
+    color: #00fff6;
+    background: black;
+}
+
+/* خلفية Matrix */
+.matrix {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://i.imgur.com/0N4Qm1S.gif") center/cover no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #00ffea;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu button {
+    flex: 1 1 45%;
+    padding: 15px;
+    background: black;
+    border: 1px solid #00fff6;
+    color: #00fff6;
+    cursor: pointer;
+    font-size: 18px;
+}
+.menu button:hover {
+    background: #00fff6;
+    color: black;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid #00fff6;
+    background: rgba(0,0,0,0.8);
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* لوحة التحكم */
+.dashboard-item {
+    border: 1px solid #00fff6;
+    background: rgba(0,0,0,0.7);
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 17px;
+}
