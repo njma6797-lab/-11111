@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>أكاديمية نجم للهكر الأخلاقي</title>
-
-<link rel="stylesheet" href="style.css" />
-<script defer src="script.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية النجم للهاكر الأخلاقي</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="matrix"></div>
+    <!-- صوت الخلفية -->
+    <audio id="bg-sound" autoplay loop>
+        <source src="bg.mp3" type="audio/mpeg">
+    </audio>
 
-<div class="overlay">
+    <!-- صوت الضغط -->
+    <audio id="click-sound">
+        <source src="click.mp3" type="audio/mpeg">
+    </audio>
 
-<header>
-<h1>أكاديمية نجم للهكر الأخلاقي</h1>
-<p class="subtitle">تعلم – اختبر – احترف</p>
-</header>
+    <div class="overlay"></div>
 
-<nav class="menu">
-<button onclick="loadPage('books')">📘 كتب</button>
-<button onclick="loadPage('courses')">🎓 كورسات</button>
-<button onclick="loadPage('quiz')">🛡️ اختبار</button>
-<button onclick="loadPage('sound')">🎧 مؤثرات</button>
-<button onclick="loadPage('network')">⚠️ فحص الشبكة</button>
-<button onclick="loadPage('dashboard')">📊 لوحة التحكم</button>
-</nav>
+    <div class="container">
+        <h1 class="title">أكاديمية النجم</h1>
+        <p class="sub">تــدريــب الاخــتــراق الأخـلاقـي و الأمــن الســيبــرانــي</p>
 
-<section id="content"></section>
+        <div class="btn-box">
+            <button class="btn" onclick="openPage('editor')">محرر الثغرات التعليمية</button>
+            <button class="btn" onclick="openPage('test')">اختبار الأمن السيبراني</button>
+            <button class="btn" onclick="openPage('tools')">أدوات تحليل وهمية</button>
+        </div>
+    </div>
 
-</div>
-
-<audio id="startSound">
-<source src="https://www.soundjay.com/button/sounds/beep-07.mp3">
-</audio>
-
+    <script src="script.js"></script>
 </body>
 </html>
